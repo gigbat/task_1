@@ -4,10 +4,10 @@ public class Manager extends Employee {
     }
 
     public void setMoney() {
-        if (getPercentOfWorkHours() > 100) {
-            this.setMoney(getRate());
+        if (this.getRate() > this.RATE) {
+            this.setMoney(RATE);
         } else {
-            this.getSalary();
+            this.getSalary(this);
         }
     }
 }

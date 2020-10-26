@@ -4,6 +4,6 @@ public class Programmer extends Employee {
     }
 
     public void setMoney() {
-        this.getSalary();
+        this.getSalary(this);
     }
 }
